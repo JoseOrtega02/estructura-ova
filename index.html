@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./img/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un Vistazo a la Computadora</title>
+    <link rel="stylesheet" href="style.css">
+     <script>
+        function headerHandler(){
+        let header = document.getElementById("header")
+        let btn = document.getElementById("btn")
+       
+        if(header.style.left === "-95vw"){
+            btn.src = "img/cross.svg"
+            header.style.left = "0vw"
+            
+            return
+        }else  {
+            btn.src = "img/menu-burger.svg"
+            header.style.left = "-95vw"
+            
+        }
+        
+    }
+    function popUp(URL){
+    window.open(URL, 'Activiadad Ardora', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=1,width=500,height=500,left = 390,top = 50');
+  }
+     </script>
+</head>
+<body>
+    <!-- header -->
+    <div class="header__container">
+        <ul class='header' id='header'>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#tema1">Conceptos Introductorios</a></li>
+            <li><a href="#tema2">Partes de una computadora</a></li>
+            <li><a href="#tema3">Bit,Byte y Palabra</a></li>
+            <li><a href="#tema4">Señales digitales y analógicas</a></li>
+            <li><a href="#autores">Autores</a></li>
+        </ul>
+        <span class='btn'  onClick={headerHandler()}><img id="btn" src="img/menu-burger.svg" alt="" /></span>
+    </div>
+    <!-- banner -->
+    <div class='containerBanner'>
+        <div class="Banner__container" id="banner">
+        <div  class='banner__div1'>
+            <img src="img/medhime.svg" alt="medhime completo" width="140" id="logoMed"/>
+            <img src="img/medhime_ico.svg" alt="icono" width="50" id="icono"/>
+        </div>
+        <div  class='banner__div2'>
+            <p id="texto" >Descargar <strong>OVA</strong></p>
+            <a href="/link.html"><img src="img/Ico_Des.svg" alt="" width="40"/></a>
+        </div>
+    </div>
+    </div>
+    <!-- hero -->
+    <div class='hero__container' id='inicio'>
+        <h1 class='hero__title'>Un Vistazo a la Computadora</h1>
+        <button class='hero__btn'><a href="#tema1">Comenzemos</a></button>
+    </div>
+
+    <!-- tema 1 -->
+    <div class='tema__container' id="tema1">
+        <h1>Conceptos Introductorios</h1>
+
+        <p>Vamos a empezar hablando de que es una computadora:</p>
+        <p>"La computadora no es más que una máquina que realiza un trabajo
+por medio de la energía eléctrica; pero es capaz de aliviar al humano
+de tareas rutinarias como el almacenamiento, la realización de cálculos y las
+decisiones repetitivas."</p>
+            <ul style="margin:5px;">Las computadoras actuales son sistemas electrónicos digitales complejos. Se caracterizan por su:
+                <li>Versatilidad: Puede destinarse a distintos usos.</li>
+                <li>Velocidad: Puede ejecutar millones de instrucciones en un segundo.</li>
+                <li>Capacidad de almacenamiento: Puede almacenar gran cantidad de datos y disponer de ellos cuando un programa los requiera.</li>
+                <li>Ahora en estos videos veremos que son los datos e información y los procesamientos de datos:</li>
+                
+            </ul>
+
+        <div style="display: flex; flex-direction: column;align-items: center;width: 100%;">
+            <video src="./img/Video1.mp4" controls></video>
+             <video src="./img/Video1a.mp4" controls></video>
+            <img src="./img/Imagen1.jpg" alt="" />
+            
+            <a onClick="popUp('./actividades/Act1/Ahorcado.htm')"><button class='tema__btn'>Actividad</button></a>
+        </div>
+        
+    </div>
+    <!-- tema 2 -->
+    <div class='tema__container' id="tema2">
+        <h1>Partes de una computadora</h1>
+       
+
+        <p>Como funciona una computadora y sus partes</p>
+        <p>Los dispositivos que sirven para ingresar datos se denominan Unidades de Entrada, el
+procesamiento es realizado por la Unidad Central de Procesamiento de acuerdo al programa
+almacenado en la Unidad de Memoria y los resultados se informan al usuario a través de
+dispositivos denominados Unidades de Salida.</p>
+        <div style="display: flex; flex-direction: column;align-items: center;width: 100%;">
+            <video src="./img/Video2.mp4" controls></video>
+            <img src="./img/Imagen2.jpg" alt="" />
+            
+            <a onClick="popUp('./actividades/Act2/Crucigrama.htm')"><button class='tema__btn'>Actividad</button></a>
+        </div>
+        
+    </div>
+    <!-- tema 3 -->
+    <div class='tema__container' id='tema3'>
+        <h1>Bit,Byte y Palabra</h1>
+       
+
+        <p>Bit y Byte</p>
+        
+        <div style="display: flex; flex-direction: column;align-items: center;width: 100%;">
+            <video src="./img/Video3.mp4" controls></video>
+            <p>La palabra se puede definir como la cantidad de bits que la computadora utiliza en forma
+                simultánea para realizar ciertos procesos internos, tales como la transferencia de datos entre
+                sus componentes. La cantidad de bits que forman una palabra se denomina tamaño, longitud o
+                ancho de palabra. Las computadoras modernas normalmente poseen un tamaño de palabra de
+                16, 32 o 64 bits. También suele hacerse referencia al tamaño de palabra expresándolo en bytes
+                (palabra de dos bytes, palabra de cuatro bytes, etc.).</p>
+            
+            <a onClick="popUp('./actividades/Act3/TEST.htm')"><button class='tema__btn'>Actividad</button></a>
+        </div>
+        
+    </div>
+    <!-- tema 4 -->
+    <div class='tema__container' id='tema4'>
+        <h1>Señales digitales y analógicas</h1>
+       
+
+        <h2>Conversión analógica/digital (A/D)</h2>
+        <p>Como la computadora es una máquina digital, para operar con dispositivos analógicos, es
+            necesario realizar la conversión correspondiente. Así, un periférico de entrada que opera con
+            datos representados por señales analógicas (como el módem, mouse, escáner), debe realizar la
+            conversión correspondiente a señales digitales para que dichos datos puedan ser interpretadas
+            por la computadora. Este proceso se denomina conversión analógico/digital, o simplemente
+            conversión A/D.</p>
+            <h2>Conversión digital/analógica (D/A)</h2>
+            <p>Similarmente, cuando un periférico de salida requiere señales de tipo analógico para
+                mostrar los resultados, las señales internas digitales generadas por la computadora deben ser
+                transformadas a señales analógicas. Este proceso se denomina conversión digital/analógica, o
+                simplemente conversión D/A.</p>
+        <div style="display: flex; flex-direction: column;align-items: center;width: 100%;">
+            <video src="./img/Video4.mp4" controls></video>
+            
+            
+            <a onClick="popUp('./actividades/Act4/Act4.htm')"><button class='tema__btn'>Actividad</button></a>
+        </div>
+        
+    </div>
+    <!-- autores -->
+    <div class='aut__container' id='autores'>
+        <div class='aut__card'>
+            <h1>Autor: Eliana Agüero</h1>
+            <img src="img/foto1.jpg" alt="" />
+        </div>
+        <div class='aut__card'>
+            <h1>Autor: José Ortega</h1>
+            <img src="img/foto2.jpg" alt="" />
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class='footer' >
+		<div>
+		<a href="http://www.portalhuarpe.com.ar" target="_blank">
+			<img src="img/logo-white-344x67.png" alt="logo Huarpe"/>	
+		</a>
+		</div>
+		<div class='footer__div1' >
+			<p>Un Vistazo a la Computadora por José Ortega, Eliana Agüero;  desarrollado con MeDHIME (Américo Sirvente) . Diseñado en el Centro Tecnológico Educativo U.N.S.J.
+Autor metadato: José Ortega, Eliana Agüero se distribuye bajo la Licencia Creative Commons Atribución-NoComercial-Compartirigual 4.0 Internacional.</p>
+		<img src="img/LL.png" alt="copyright" />
+		</div>
+		
+	</footer>
+
+  
+</body>
+</html>

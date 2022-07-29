@@ -1,0 +1,234 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #000000;
+    scroll-behavior: smooth;
+  }
+
+
+
+
+/* header */
+.header li{
+    background-color: #111a2c;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .header a{
+    text-decoration: none;
+    color: #fff;
+  }
+  .header{
+    background-color:rgba(0, 0, 0, 0.664);
+    padding: 10px;
+    position: fixed;
+    left: -95vw;
+    top: 0;
+    height: 100vh;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    color: white;
+    z-index: 9999;
+  }
+  
+  .btn{
+    position: fixed;
+    right: 5vw;
+    top: 18vw;
+    background-color: rgb(34 189 82);
+    border-radius: 20px;
+    margin-top: 3vh;
+    padding: 7px;
+    z-index: 999;
+  }
+  .btn:hover{
+    cursor: pointer;
+  }
+  #btn{
+    width: 30px;
+  }
+  
+  /* hero */
+  .hero__container{
+    background-image: url("./img/codigo-binario-gif-animado-7.gif");
+    height: 85vh;
+    text-align: center;
+    align-items: center;
+    display: flex;
+      flex-direction: column;
+      padding: 10px;
+      margin-bottom: 10vh;
+  }
+  .hero__container a{
+    color: #fff;
+    text-decoration: none;
+  }
+  .hero__title{
+   margin-top: auto;
+   margin-bottom: auto;
+    color: rgb(34 189 82);
+  }
+  .hero__btn{
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    background-color:rgb(34 189 82);
+    font-size: 1.3rem;
+  }
+  .hero__btn:hover{
+  cursor: pointer;
+  }
+
+  /* banner */
+  #icono{display: none;}@media (max-width: 500px) {#texto{display: none;}#logoMed{display: none;}#icono {display: block;}}
+
+.containerBanner{
+  background-color: rgba(67, 67, 67);
+  display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 5px 0 5px 0;
+   position:sticky;
+   bottom:0;
+   top:0;
+   z-index: 999;
+}
+
+.Banner__container{
+  background-color: rgba(67, 67, 67);
+  display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 5px 0 5px 0;
+   position:sticky;
+   bottom:0;
+   top:0;
+   z-index: 999;
+   width: 100%;
+}
+
+.banner__div1{
+  margin-left:3%;
+}
+.banner__div2{
+ display: flex; 
+ align-items: center;
+ margin-right:3%;
+}
+
+.banner__div2 p{
+  color: white; 
+  font-family: 'Open Sans', sans-serif;
+   font-weight: light;
+    margin-right: 10px;
+}
+
+.banner__div2 strong{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+
+/* tema */
+.tema__container{
+    width: 100%;
+    background-color: transparent;
+    color: antiquewhite;
+    margin-bottom: 10vh;
+    text-align: center;
+  }
+  .tema__container p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5rem;
+  }
+  .tema__container img{
+    width: 90vw;
+  }
+  .tema__btn{
+    background-color: rgb(34 189 82);
+    border: none;
+    border-radius: 10px;
+    padding: 3px;
+    font-size: 1.1rem;
+    margin-top: 20px;
+  }
+  .tema__btn:hover{
+    cursor: pointer;
+  }
+  .tema__container video{
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* autores */
+  .aut__container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 5vh;
+  }
+  .aut__card{
+    color: white;
+    margin-top: 10vh;
+    text-align:center;
+  }
+  .aut__card img{
+    width: 70vw;
+  }
+  
+  @media screen and (min-width:768px){
+    .aut__container{
+      grid-template-columns: 1fr 1fr;
+      column-gap: 20px;
+    }
+    .aut__card img{
+      width: 40vw;
+    }
+  }
+
+  /* footer */
+  .footer{
+    display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 2rem;
+              color: white;
+              background-color: #434040;
+  }
+  .footer__div1{
+    margin-left: 1.2rem
+  }
+  .footer__div1 img{
+    margin-top: 0.2rem
+  }
+  @media (max-width: 768px) {
+    .footer{
+        display:flex;
+        flex-direction: column
+    }
+  }
+
+
+
+
+
+
+  @media (min-width: 768px) {
+   .btn{
+    top: 7vw;
+   }
+  }
